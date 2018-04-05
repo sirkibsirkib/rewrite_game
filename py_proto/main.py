@@ -21,7 +21,7 @@ def make_rule(left_len):
 challenge = make_challenge(CHALLENGE_LEN)
 #mr = lambda : make_rule(left_len=random.randint(1, RULE_MAX_LEFT)) 
 rules = [make_rule((i % (RULE_MAX_LEFT)) + 1) for i in range(5)]
-while len(challenge > 0):
+while len(challenge) > 0:
 	print(challenge)
 	print('^  ' * (int((len(challenge)+2) / 3)))
 	for i in range(0, len(challenge), 3):
